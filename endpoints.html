@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Endpoint</title>
+  </head>
+  <body>
+    <h1>Endpoints Sabrina API TP Final</h1>
+    <ul>
+      <p>/api</p>
+      <li>
+        POST: /api/register (receives, body: { email, password, username })
+      </li>
+      <li>POST: /api/login (receives, body: { email, password })</li>
+      <li>
+        POST: /api/products/new (receives, body: { userId, status, availableQty,
+        price, name })
+      </li>
+      <li>
+        POST: /api/cart/add (receives, body: { cartId, productId, quantity,
+        price, status })
+      </li>
+      <li>GET: /api/usuarios/:id/ordenes (receives, params: id)</li>
+      <li>GET: /api/usuarios/:id/cart (receives, params: id)</li>
+      <li>GET: /api/products</li>
+      <li>PUT: /api/cart/:id/purchase (receives, params: id)</li>
+    </ul>
+  </body>
+</html>
